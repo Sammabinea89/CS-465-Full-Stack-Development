@@ -1,0 +1,56 @@
+
+
+
+ 
+
+Travlr GetAways
+CS 465 Project Software Design Document
+Version 1.0
+
+Table of Contents
+
+Document Revision History
+
+Version	Date	Author	Comments
+1.0	08/25/2024	Sammabine Admettre	Sections on API endpoints finished the part on the user interface
+
+Instructions 
+
+
+Executive Summary
+
+	The Travlr Getaways web application is developed using the MEAN stack. The MEAN stack consists of Express, Node.js, MongoDB, and Angular. MongoDB is a NoSQL database that helps by storing information in JSON documents. Node.js handles the website's backend, while Express provides a web application framework that may be used in conjunction with Node.js. 
+
+	Finally, because Angular is used as the frontend framework, Travlr Getaways can offload some processing from the backend to the frontend. This implies that some logic and operations are performed in the browser. The customer-facing section of the Travlr Getaways online application uses Node.js to provide static web content provided by MongoDB and the Express framework. However, this is the administrator's fault.
+
+Design Constraints
+
+The web application Travlr Getaways is developed using the MEAN stack. The MEAN stack consists of Angular, Node.js, Express, and MongoDB. Data is stored in JSON documents in a NoSQL database called MongoDB, which simplifies things. Express is a web application framework that may be used in conjunction with Node.js to handle the backend of the website. Last but not least, Travlr Getaways may move certain processes from the backend to the frontend as the frontend framework is Angular. This shows how certain logic and actions are handled by the browser. The customer-facing portion of the Travlr Getaways online application uses Node.js to serve static web content that is derived from MongoDB and the Express framework. That being said, this is the administrator's fault.
+
+System Architecture View
+
+Component Diagram
+
+ 
+
+A text version of the component diagram is available: CS 465 Full Stack Component Diagram Text Version. 
+
+The web application Travlr Getaways is designed on the MEAN stack. The components of the MEAN stack are MongoDB, Express, Node.js, and Angular. MongoDB is a NoSQL database that simplifies things by storing data in JSON documents. When integrated with Node.js, Express is a web application framework that can be used to handle the backend of a website. Finally, Travlr Getaways may choose to move some backend functions to the frontend since Angular is the frontend framework. This illustrates how the browser controls specific actions and logic. The Travlr Getaways online application uses Node.js to send static web content that is sourced from MongoDB and the Express framework to the customer-facing part. Taking everything into account, this is the administrator's fault.
+Sequence Diagram
+
+The web application Travlr Getaways was developed using the MEAN stack. The components of the MEAN stack are MongoDB, Express, Node.js, and Angular. MongoDB is a NoSQL database that simplifies things by storing data as JSON documents. When used with Node.js, Express is a web application framework that can control the backend of a website. Finally, Travlr Getaways may choose to move some backend functions to the frontend given that Angular is the frontend framework. This illustrates how certain functions and logic are controlled by the browser. The Travlr Getaways web application uses Node.js to provide its static web content to the customer-facing section after retrieving it from MongoDB and the Express framework. In light of everything, this is the administrator's fault.
+
+Class Diagram
+
+The Travlr Getaways online application has several characteristics for each item, such as name, price, and attributes specific to that particular object, such as cabin type or seat class. These three things make up the trip information, which includes things like the arrival and departure dates, cruise details, and hotel details. In addition, the Travlr Getaways online application offers booking items for hotels, airlines, and cruises together with the data required for each of these items (hotel, flight, and cruise).
+
+API Endpoints
+
+
+Method	Purpose	URL	Notes
+GET	<Retrieve list of things>	</api/things>	<Returns all active things>
+GET	<Retrieve single thing>	</api/things/:thingId>	<Returns single thing instance, identified by the thing ID passed on the request URL>
+
+The User Interface
+
+A multitude of objects, including name, price, and object-specific information like cabin type or seat class, make up the Travlr Getaways web application. The trip info is made up of these three items (cruise info, airplane info, and hotel info) and contains information on the origin, destination, and starting and ending dates of the trip. A booking object, hotel booking, flight booking, and cruise booking also relate to each of these objects (cruise info, flight data, and hotel info), and these booking objects are all components of the Travlr Getaways online application.
